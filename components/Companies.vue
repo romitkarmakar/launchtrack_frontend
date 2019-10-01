@@ -1,7 +1,7 @@
 <template>
-  <div class="card">
+  <div class="card" style="width:0px">
     <div class="card-header">{{ company.name }}</div>
-    <div class="card-body justify-content-center">
+    <div class="card-body justify-content-center" style="align:bottom">
       <img :src="company.image" height="100" class="mx-auto d-block" />
     </div>
   </div>
@@ -13,3 +13,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  .card{
+    background-color:whitesmoke;
+    height: 100%;
+    width: 70%
+  }
+</style>
+

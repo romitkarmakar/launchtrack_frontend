@@ -1,8 +1,9 @@
-<template>
+<template><body class="sty">
   <div>
     <Navbar />
     <nuxt />
   </div>
+          </body>
 </template>
 
 <script>
@@ -13,3 +14,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .sty{
+    background-color: black
+  }
+</style>
