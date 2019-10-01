@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col col-6 p-3" v-for="item in launches" v-bind:key="item">
+      <div v-for="item in launches" :key="item" class="col col-4 p-3">
         <LaunchCard :launch="item" />
       </div>
     </div>
@@ -23,7 +23,6 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$route.params.slug)
     const self = this
     axios.get(`http://localhost:8000/launches/get/${self.id}`).then((res) => {
       self.launches = res.data.data
