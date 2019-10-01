@@ -1,8 +1,10 @@
 <template>
-  <div class="card" style="width:0px">
-    <div class="card-header">{{ company.name }}</div>
-    <div class="card-body justify-content-center" style="align:bottom">
-      <img :src="company.image" height="100" class="mx-auto d-block" />
+  <div class="card">
+    <div class="card-header">
+      {{ company.name }}
+    </div>
+    <div class="card-body justify-content-center">
+      <img :src="company.image" height="150" width="250" class="mx-auto d-block">
     </div>
   </div>
 </template>
@@ -18,7 +20,6 @@ export default {
   .card{
     background-color:whitesmoke;
     height: 100%;
-    width: 70%
+    width: 90%;
   }
 </style>
-

@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="row p-3">
-      <div class="col col-6 p-2" v-for="item in companies" v-bind:key="item">
+      <div v-for="item in companies" :key="item" class="col col-4 p-3">
         <nuxt-link :to="'/launches/'+ item.name">
-        <Companies :company="item" />
+          <Companies :company="item" />
         </nuxt-link>
       </div>
     </div>
